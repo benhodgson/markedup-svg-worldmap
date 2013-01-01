@@ -1,6 +1,6 @@
 # Marked-Up SVG World Map
 
-An SVG world map marked up with [ISO 3166 country codes](http://www.iso.org/iso/home/standards/country_codes.htm).
+An SVG world map marked-up with [ISO 3166 country codes](http://www.iso.org/iso/home/standards/country_codes.htm).
 Path (`path`) and group (`g`) elements are annotated with `cc` attributes
 containing their country codes.
 
@@ -15,12 +15,12 @@ A full example is included in the `example.html` file.
 
 ## Acknowledgements
 
-This is based upon Al MacDonald's [Low Resolution World Map](http://en.wikipedia.org/wiki/File:World_map_-_low_resolution.svg).
+Adapted from Al MacDonald's [Low Resolution World Map](http://en.wikipedia.org/wiki/File:World_map_-_low_resolution.svg).
 
 ## Author
 
 Original [Low Resolution World Map](http://en.wikipedia.org/wiki/File:World_map_-_low_resolution.svg)
-by Al MacDonald. This version has been pruned and marked-up with
+by Al MacDonald. This derivative work has been pruned and marked-up with
 [ISO 3166 country codes](http://www.iso.org/iso/home/standards/country_codes.htm)
 by [Ben Hodgson](http://benhodgson.com/).
 
