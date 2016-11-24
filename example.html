@@ -6,7 +6,7 @@
   <meta name="author" content="Ben Hodgson">
 </head>
 <body>
-  <embed src="map.svg" type="image/svg+xml" id="world" width="408" height="230"></embed>
+  <embed src="map.svg" type="image/svg+xml" id="world" width="408" height="230">
   <script type="text/javascript">
     (function () {
       var world = document.getElementById("world");
@@ -21,7 +21,9 @@
             "trouble getting it to work, try accessing it over HTTP.";
       }
       
-      world.addEventListener("load", function () {        
+      world.addEventListener("load", function () {
+        var doc = world.getSVGDocument();
+        
         // Colour Canada red
         doc.querySelector("[cc=ca]").style.fill = "red";
         
