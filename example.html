@@ -8,18 +8,20 @@
 <body>
   <embed src="map.svg" type="image/svg+xml" id="world" width="408" height="230"></embed>
   <script type="text/javascript">
-    
-    /*
-      Due to restrictions imposed by the same-origin policy, this demo
-      probably won't work when accessed using the file:// URI scheme. If
-      you're having trouble getting it to work, try accessing it over HTTP.
-    */
-    
     (function () {
       var world = document.getElementById("world");
-      world.addEventListener("load", function () {
-        var doc = world.getSVGDocument();
-        
+      
+      if (location.protocol == "file:") {
+        var warningDiv = document.createElement("div");
+        warningDiv.style.color = "red";
+        document.body.insertBefore(warningDiv, world);
+        warningDiv.textContent = "Due to restrictions imposed by the " +
+            "same-origin policy, this demo probably won't work when " +
+            "accessed using the file:// URI scheme. If you're having " +
+            "trouble getting it to work, try accessing it over HTTP.";
+      }
+      
+      world.addEventListener("load", function () {        
         // Colour Canada red
         doc.querySelector("[cc=ca]").style.fill = "red";
         
@@ -31,10 +33,8 @@
             alert("My country code is " + cc);
           }
         });
-        
       });
     }());
-    
   </script>
 </body>
 </html>
