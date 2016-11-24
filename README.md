@@ -24,7 +24,7 @@ by Al MacDonald. This derivative work has been pruned and marked-up with
 [ISO 3166 country codes](http://www.iso.org/iso/home/standards/country_codes.htm)
 by [Ben Hodgson](http://benhodgson.com/).
 
-Thanks to [Marco Vettorello](https://github.com/markov00) for contributing fixes.
+Thanks to [Marco Vettorello](https://github.com/markov00) and [Denis Hovart](https://github.com/dhovart) for contributing fixes.
 
 ## License
 
