@@ -1,3 +1,7 @@
+#Live example 
+
+https://jliliamen.github.io/markedup-svg-worldmap/example.html
+
 # Marked-Up SVG World Map
 
 An SVG world map marked-up with [ISO 3166 country codes](http://www.iso.org/iso/home/standards/country_codes.htm).
